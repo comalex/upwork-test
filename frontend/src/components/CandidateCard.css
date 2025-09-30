@@ -1,0 +1,75 @@
+.candidate-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: var(--surface-elevated);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.candidate-card header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.candidate-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--primary);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.candidate-title {
+  color: var(--text-muted);
+}
+
+.match-score {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.candidate-location,
+.candidate-availability {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background: rgba(59, 130, 246, 0.12);
+  color: #1d4ed8;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.candidate-card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidate-card .rate {
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.candidate-card .secondary-button {
+  border: 1px solid var(--border-subtle);
+  background: white;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+}

@@ -1,0 +1,52 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.filter-scroll {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.filter-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+}
+
+.filter-chip {
+  border: 1px solid var(--border-subtle);
+  background: white;
+  color: var(--text-muted);
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-chip:hover,
+.filter-chip:focus {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-chip.active {
+  background: rgba(99, 102, 241, 0.16);
+  border-color: transparent;
+  color: var(--primary);
+}
+
+.filter-link {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  color: var(--primary);
+}
