@@ -1,0 +1,34 @@
+.quick-actions {
+  display: grid;
+  gap: 1rem;
+}
+
+.quick-action {
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.1rem 1.25rem;
+  background: var(--surface-elevated);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.quick-action h3 {
+  margin-bottom: 0.35rem;
+}
+
+.quick-action p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.quick-action button {
+  border: none;
+  background: rgba(99, 102, 241, 0.14);
+  color: var(--primary);
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+}

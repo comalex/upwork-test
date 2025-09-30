@@ -1,0 +1,95 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-elevated);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brand-name {
+  display: block;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.brand-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  border: none;
+  background: transparent;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--text-strong);
+}
+
+.nav-button.active {
+  background: rgba(99, 102, 241, 0.16);
+  color: var(--primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pill {
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
